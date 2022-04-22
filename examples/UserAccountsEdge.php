@@ -40,7 +40,7 @@ $fields = array(
 );
 $params = array(
 );
-echo json_encode((new User($id))->getAccounts(
+echo json_encode((new User($id))->getAdAccounts(
   $fields,
   $params
 )->getResponse()->getContent(), JSON_PRETTY_PRINT);
